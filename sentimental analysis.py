@@ -32,5 +32,26 @@ df.info()
 # %%
 df.isnull().sum()
 
+#outlier detection
+def detect_outliers_iqr(column):
+    Q1 = column.quantile(0.25)
+    Q3 = column.quantile(0.75)
+    IQR = Q3 - Q1
+
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+
+    outliers = column[(column < lower_bound) | (column > upper_bound)]
+    return outliers
+
+
+numeric_col = df.select_dtypes(include=np.number).columns[0]
+
+outliers = detect_outliers_iqr(df[numeric_col])
+
+print("Column checked:", numeric_col)
+print("Number of outliers:", len(outliers))
+print(outliers.head())
+
 
 
