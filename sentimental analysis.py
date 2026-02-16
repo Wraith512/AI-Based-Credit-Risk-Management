@@ -16,7 +16,7 @@ import random
 from sklearn.model_selection  import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-
+##basic eda
 
 
 # %%
@@ -52,6 +52,7 @@ outliers = detect_outliers_iqr(df[numeric_col])
 print("Column checked:", numeric_col)
 print("Number of outliers:", len(outliers))
 print(outliers.head())
+
 
 
 
