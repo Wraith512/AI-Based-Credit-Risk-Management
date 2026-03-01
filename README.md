@@ -17,5 +17,5 @@ Frontend: React, JavaScript, Chart.js, Axios/Fetch
 4. Tweets are cleaned and converted into TF-IDF vectors  
 5. Logistic Regression model predicts sentiment  
 6. Results are sent back to the frontend  
-7. Website displays sentiment distribution and sample tweets  
+7. Website displays sentiment distribution and sample tweets 
 
