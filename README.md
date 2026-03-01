@@ -23,5 +23,12 @@ Frontend: React, JavaScript, Chart.js, Axios/Fetch
 
 This project demonstrates how machine learning models can be integrated into real-world web applications to analyze social media data and extract meaningful insights.
 
+# Applications
+
+1.Brand and product sentiment monitoring
+2.Market and trend analysis
+3.Public opinion tracking
+4.Decision support using social media data
+
 
 
